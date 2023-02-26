@@ -161,7 +161,7 @@ Most users will want at a minimum GraphicsMagick installed on their server, and 
 PHP extensions for media processing (optional)
 ----------------------------------------------
 
-CA supports two different mechanisms to employ GraphicsMagick or ImageMagick. The preferred option is a PHP extensions that, when installed, provide a fast and efficient way for PHP applications such as CA to access GraphicsMagick or ImageMagick functionality. Alternatively GraphicsMagick or ImageMagick can be invoked as a command-line program directly without any PHP extension.
+CA supports two different mechanisms to employ GraphicsMagick or ImageMagick. The preferred option is a PHP extension that, when installed, provide a fast and efficient way for PHP applications such as CA to access GraphicsMagick or ImageMagick functionality. Alternatively GraphicsMagick or ImageMagick can be invoked as a command-line program directly without any PHP extension.
 
 In general you should try to use a PHP extension rather than the command-line mechanism. The extensions provide **much** better performance. Unfortunately, the extensions have proven to be unstable in some environments and can be difficult to install on Windows systems. If you are running the PHP GMagick (for GraphicsMagick) or IMagick (for ImageMagick) extension and are seeing segmentation faults or incorrect image encoding such as blank images you should remove the extension, let the command-line mechanism take over and see if that improves things. Avoid installing both GMagick and IMagick on the same server. Simultaneous installation of both extensions has been associated with crashes and general instability.
 
